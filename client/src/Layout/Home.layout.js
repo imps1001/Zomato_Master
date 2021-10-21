@@ -1,5 +1,5 @@
-import React from "react";
-import { useDispatch } from "react-router";
+import {React,useEffect} from "react";
+import { useDispatch} from 'react-redux';
 //Components
 import Navbar from "../Components/Navbar";
 import FoodTab from "../Components/FoodTab";
@@ -18,8 +18,6 @@ useEffect(()=> {
   <div>
    <div className="container mx-auto lg:px-20">
    <Navbar />
-
-    {props.children}
    </div>
    <FoodTab />
   </div>

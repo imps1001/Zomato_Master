@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 import DeliveryCarousal from "./DeliveryCarousal";
 
 const Delivery = () => {
-const [restaurantList, setRestaurantList] = useState([]);
+const [setRestaurantList] = useState([]);
 
 const reduxState = useSelector(
   (globalStore) => globalStore.restaurant.restaurants

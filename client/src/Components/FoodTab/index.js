@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { useParams, Link } from "react-router-dom";
 import { BsHandbag } from "react-icons/bs";
 import { IoBeerOutline } from "react-icons/io5";
@@ -7,7 +7,7 @@ import { GiMorgueFeet } from "react-icons/gi";
 
 const MobileTab = () => {
 
-const [allTypes, setAllTypes] = useState([
+const [allTypes] = useState([
   {
     id: "delivery",
     icon: <BsHandbag />,
